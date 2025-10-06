@@ -1,5 +1,5 @@
 # policy-dgm
-Data Governance Policy [DRAFT] Github [Repository](https://github.com/silinternational/policy-on-email-retention)
+Data Governance Policy [DRAFT] Github [Repository](https://github.com/silinternational/policy-dgm)
 
 ## Purpose
 
@@ -18,7 +18,7 @@ The document sections are plain text files using [MarkDown](https://www.markdown
 
 ## Overview
 
-[[00-headers-toc]] (https://github.com/silinternational/policy-dgm/main/00-headers-toc.md)
+[[00-headers-toc]] (https://github.com/silinternational/policy-dgm/blob/main/00-headers-toc.md)
 
 [[01-intro]] (https://github.com/silinternational/policy-dgm/blob/main/01-intro.md)
 
