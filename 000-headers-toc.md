@@ -1,7 +1,7 @@
 ---
 author: Scott Kohler
 title: SIL Global Data Governance Policy [DRAFT]
-date: "Version 2025-08-15-1215"
+date: "Version 2025-10-06-1418"
 fontsize: 11pt
 papersize: letter
 header-includes:
@@ -24,8 +24,8 @@ header-includes:
   - \setcounter{secnumdepth}{2}
   - \setmainfont{gentiumplus}
 geometry:
-  - top=0.75in
-  - bottom=1in
+  - top=0.70in
+  - bottom=0.75in
   - left=1in
   - right=1in
 hypersetup:

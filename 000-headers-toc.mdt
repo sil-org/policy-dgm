@@ -24,8 +24,8 @@ header-includes:
   - \setcounter{secnumdepth}{2}
   - \setmainfont{gentiumplus}
 geometry:
-  - top=0.75in
-  - bottom=1in
+  - top=0.70in
+  - bottom=0.75in
   - left=1in
   - right=1in
 hypersetup:
