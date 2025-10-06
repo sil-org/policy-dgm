@@ -1,6 +1,11 @@
 # environment files typically containing secrets
 *.env
 !example.env
+data_governance_policy*.pdf
+data_governance_policy*.tex
+data_governance_policy*.xmpdata
+*.xmpi
+
 
 # directories created by developer tools
 .idea/
