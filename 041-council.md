@@ -8,3 +8,4 @@ The Data Governance Council consists of representatives from the key departments
 - **Data Stewards**: Operational staff from various teams who manage day-to-day data activities, such as data entry, cleansing, and reporting; they identify and resolve data quality issues.
 - **IT Representative**: A technical expert who advises on data infrastructure, security tools, and integration needs to support governance efforts.
 - **Legal/Privacy Advisor**: Ensures data practices align with privacy laws and ethical standards, providing guidance on data sharing and consent.
+

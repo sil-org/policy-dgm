@@ -7,4 +7,3 @@ The purpose of this policy is to:
 - Facilitate decision-making on data-related matters.
 - Ensure data supports strategic goals while minimizing risks.
 
-
