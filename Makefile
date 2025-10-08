@@ -39,4 +39,5 @@ clean:
 delete:
 	latexmk -C
 	rm $(FILENAME)-$(COMMIT_DATE).md $(FILENAME)-$(COMMIT_DATE).odt $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).tex $(FILENAME)-$(COMMIT_DATE).pdf pdfa.xmpi *.xmpdata *.tex
+	git restore 000-headers-toc.md
 
