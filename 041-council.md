@@ -1,6 +1,6 @@
 ## Data Governance Council Composition and Roles
 
-The Data Governance Council consists of representatives from key departments to ensure diverse perspectives. Members are appointed by the executive leadership and serve for a term of two years, with the possibility of renewal. Brief descriptions of the roles are as follows:
+The Data Governance Council consists of representatives from the key departments of Finance, HR, and AIM to ensure diverse perspectives. Members are appointed by the executive leadership and serve for a term of two years, with the possibility of renewal. Brief descriptions of the roles are as follows:
 
 - **Executive Sponsor**: A senior leader (e.g., CEO or Deputy Director) who provides strategic oversight, champions data governance initiatives, and aligns them with organizational goals.
 - **Data Governance Lead**: Coordinates council activities, facilitates meetings, and acts as the primary point of contact for data governance issues; responsible for tracking progress on data-related projects.

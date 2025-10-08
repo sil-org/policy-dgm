@@ -14,14 +14,14 @@ All you need is a Github account, which is free - simply sign up if you don't al
 
 [MORE TBA]
 
-The document sections are plain text files using [MarkDown](https://www.markdownguide.org/) for simple formatting, with a two-digit leading filename. Click onto a file to show the document section.
+The document sections are plain text files using [MarkDown](https://www.markdownguide.org/) for simple formatting, with a three-digit leading filename. Click onto a file to show the document section.
 
 ## Overview
 
-[[00-headers-toc]] (https://github.com/silinternational/policy-dgm/blob/main/00-headers-toc.md)
+[[00-headers-toc]] (https://github.com/sil-org/policy-dgm/blob/main/000-headers-toc.md)
 
-[[01-intro]] (https://github.com/silinternational/policy-dgm/blob/main/01-intro.md)
+[[01-intro]] (https://github.com/sil-org/policy-dgm/blob/main/010-intro.md)
 
-[[02-body]] (https://github.com/silinternational/policy-dgm/blob/main/02-body.md)
+[[02-body]] (https://github.com/sil-org/policy-dgm/blob/main/020-body.md)
 
 

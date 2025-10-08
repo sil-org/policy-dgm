@@ -1,5 +1,6 @@
 COMMIT_EPOCH = $(shell git log -1 --pretty=%ct)
 COMMIT_DATE  = $(shell date -d @$(COMMIT_EPOCH) +"%F-%H%M")
+TITLE_DATE   = $(shell date -d @$(COMMIT_EPOCH) +"%e %b %Y, %H:%M:%S")
 VERSION      = $(shell git describe --tags)
 FILENAME     = "data_governance_policy"
 
@@ -8,7 +9,7 @@ FILENAME     = "data_governance_policy"
 all: $(FILENAME)-$(COMMIT_DATE).pdf
 
 $(FILENAME)-$(COMMIT_DATE).tex: $(wildcard ???-*.md)
-	COMMIT_DATE=$(COMMIT_DATE) envsubst < 000-headers-toc.mdt > 000-headers-toc.md
+	TITLE_DATE="$(TITLE_DATE)" envsubst < 000-headers-toc.mdt > 000-headers-toc.md
 	VERSION=$(VERSION) envsubst < 010-intro.mdt > 010-intro.md
 	pandoc -s $? -t latex -o $(FILENAME)-$(COMMIT_DATE).tex
 
