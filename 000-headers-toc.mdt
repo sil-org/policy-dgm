@@ -1,7 +1,7 @@
 ---
 author: Scott Kohler
 title: SIL Global Data Governance Policy [DRAFT]
-date: "Version $COMMIT_DATE"
+date: "$COMMIT_DATE"
 fontsize: 11pt
 papersize: letter
 header-includes:
