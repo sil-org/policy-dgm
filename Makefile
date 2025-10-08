@@ -10,7 +10,7 @@ all: $(FILENAME)-$(COMMIT_DATE).pdf
 
 $(FILENAME)-$(COMMIT_DATE).md: $(wildcard ???-*.md)
 	VERSION=$(VERSION) TITLE_DATE="$(TITLE_DATE)" envsubst < 000-headers-toc.mdt > 000-headers-toc.md
-	rm $(FILENAME)-$(COMMIT_DATE).md 
+	-rm $(FILENAME)-$(COMMIT_DATE).md 
 	cat $? >> $(FILENAME)-$(COMMIT_DATE).md 
 
 $(FILENAME)-$(COMMIT_DATE).tex: $(FILENAME)-$(COMMIT_DATE).md

@@ -1,6 +1,14 @@
 ---
 title: SIL Global Data Governance Policy [DRAFT]
-author: " 8 Oct 2025, 12:14:29"
+author: " 8 Oct 2025, 15:01:45"
+subject: "Data Governance Policy"
+keywords: 
+  - "SIL Global"
+  - data
+  - governance
+  - policy
+lang: en-US
+source: "https://github.com/sil-org/policy-dgm/"
 fontsize: 11pt
 papersize: letter
 header-includes:
@@ -32,5 +40,5 @@ hypersetup:
   - allcolors=blue
   - hidelinks=false
 ---
-**Version:** v0.1.4 **Effective Date:** [TBD] **Last Reviewed:** [TBD]
+**Version:** v0.1.5 **Effective Date:** [TBD] **Last Reviewed:** [TBD]
 

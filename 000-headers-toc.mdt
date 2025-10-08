@@ -1,6 +1,14 @@
 ---
 title: SIL Global Data Governance Policy [DRAFT]
 author: "$TITLE_DATE"
+subject: "Data Governance Policy"
+keywords: 
+  - "SIL Global"
+  - data
+  - governance
+  - policy
+lang: en-US
+source: "https://github.com/sil-org/policy-dgm/"
 fontsize: 11pt
 papersize: letter
 header-includes:
