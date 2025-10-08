@@ -1,7 +1,7 @@
 ---
 author: Scott Kohler
 title: SIL Global Data Governance Policy [DRAFT]
-date: "2025-10-06-1503"
+date: "2025-10-07-2103"
 fontsize: 11pt
 papersize: letter
 header-includes:

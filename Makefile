@@ -1,6 +1,6 @@
 COMMIT_EPOCH = $(shell git log -1 --pretty=%ct)
 COMMIT_DATE  = $(shell date -d @$(COMMIT_EPOCH) +"%F-%H%M")
-VERSION      = $(shell git describe)
+VERSION      = $(shell git describe --tags)
 FILENAME     = "data_governance_policy"
 
 # Makes sure latexmk always runs
