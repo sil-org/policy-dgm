@@ -3,6 +3,7 @@ COMMIT_DATE  = $(shell date -d @$(COMMIT_EPOCH) +"%F-%H%M")
 TITLE_DATE   = $(shell date -d @$(COMMIT_EPOCH) +"%e %b %Y, %H:%M:%S")
 VERSION      = $(shell git describe --tags)
 FILENAME     = "data_governance_policy"
+RELEASE_NAME = "SIL-Data-Governance $(VERSION)"
 
 # Makes sure latexmk always runs
 .PHONY: $(FILENAME)-$(COMMIT_DATE).pdf all clean check checkall gdrive release
@@ -24,7 +25,8 @@ $(FILENAME)-$(COMMIT_DATE).xmpdata: source_xmpdata
 
 check:	$(FILENAME)-$(COMMIT_DATE).pdf
 	evince $(FILENAME)-$(COMMIT_DATE).pdf
-checkall:	check
+
+checkall:	check $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).odt 
 	libreoffice $(FILENAME)-$(COMMIT_DATE).docx
 	libreoffice $(FILENAME)-$(COMMIT_DATE).odt
 
@@ -41,7 +43,7 @@ gdrive:
 	gdrive files import $(FILENAME)-$(COMMIT_DATE).docx
 
 release: 
-	gh release create $(VERSION) --generate-notes -p -t "SIL-Data-Governance $(VERSION)"  $(FILENAME)-$(COMMIT_DATE).pdf $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).odt
+	gh release create $(VERSION) --generate-notes -p -t "$(RELEASE_NAME)"  $(FILENAME)-$(COMMIT_DATE).pdf $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).odt
 	
 clean:
 	-latexmk -c
