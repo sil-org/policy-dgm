@@ -6,6 +6,7 @@ data_governance_policy*.tex
 data_governance_policy*.xmpdata
 *.xmpi
 000-headers-toc.md
+data_governance_policy-*.md
 
 
 # directories created by developer tools
