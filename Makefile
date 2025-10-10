@@ -5,7 +5,7 @@ VERSION      = $(shell git describe --tags)
 FILENAME     = "data_governance_policy"
 
 # Makes sure latexmk always runs
-.PHONY: $(FILENAME)-$(COMMIT_DATE).pdf all clean check checkall release
+.PHONY: $(FILENAME)-$(COMMIT_DATE).pdf all clean check checkall gdrive release
 all: $(FILENAME)-$(COMMIT_DATE).pdf $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).odt
 
 $(FILENAME)-$(COMMIT_DATE).md: $(wildcard ???-*.md)
@@ -36,6 +36,9 @@ $(FILENAME)-$(COMMIT_DATE).docx: $(FILENAME)-$(COMMIT_DATE).md
 
 $(FILENAME)-$(COMMIT_DATE).odt: $(FILENAME)-$(COMMIT_DATE).md
 	pandoc -s $(FILENAME)-$(COMMIT_DATE).md -t odt -o $(FILENAME)-$(COMMIT_DATE).odt
+
+gdrive:
+	gdrive files import $(FILENAME)-$(COMMIT_DATE).docx
 
 release: 
 	gh release create $(VERSION) --generate-notes -p -t "SIL-Data-Governance $(VERSION)"  $(FILENAME)-$(COMMIT_DATE).pdf $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).odt
