@@ -37,8 +37,8 @@ $(FILENAME)-$(COMMIT_DATE).docx: $(FILENAME)-$(COMMIT_DATE).md
 $(FILENAME)-$(COMMIT_DATE).odt: $(FILENAME)-$(COMMIT_DATE).md
 	pandoc -s $(FILENAME)-$(COMMIT_DATE).md -t odt -o $(FILENAME)-$(COMMIT_DATE).odt
 
-release: all
-	gh release create $VERSION --generate -p -t "SIL-Data-Governance $VERSION"  $(FILENAME)-$(COMMIT_DATE).pdf $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).odt
+release: 
+	gh release create $(VERSION) --generate-notes -p -t "SIL-Data-Governance $(VERSION)"  $(FILENAME)-$(COMMIT_DATE).pdf $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).odt
 	
 clean:
 	-latexmk -c
