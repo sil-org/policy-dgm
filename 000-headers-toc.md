@@ -1,6 +1,6 @@
 ---
 title: SIL Global Data Governance Policy [DRAFT]
-author: " 8 Oct 2025, 17:42:40"
+author: " 9 Oct 2025, 11:18:22"
 subject: "Data Governance Policy"
 keywords: 
   - "SIL Global"
@@ -40,5 +40,5 @@ hypersetup:
   - allcolors=blue
   - hidelinks=false
 ---
-**Version:** v0.1.6 **Effective Date:** [TBD] **Last Reviewed:** [TBD]
+**Version:** v0.1.8 **Effective Date:** [TBD] **Last Reviewed:** [TBD]
 
