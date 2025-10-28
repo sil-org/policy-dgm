@@ -1,5 +1,5 @@
 # policy-dgm
-Data Governance Policy [DRAFT] Github [Repository](https://github.com/silinternational/policy-dgm)
+Data Governance Policy [DRAFT] Github [Repository](https://github.com/sil-org/policy-dgm)
 
 ## Purpose
 
