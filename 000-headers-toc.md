@@ -1,12 +1,13 @@
 ---
 title: SIL Global Data Governance Policy [DRAFT]
-author: " 9 Oct 2025, 11:18:22"
+author: "28 Oct 2025, 00:08:02"
 subject: "Data Governance Policy"
 keywords: 
   - "SIL Global"
   - data
   - governance
   - policy
+  - "Data Governance Council"
 lang: en-US
 source: "https://github.com/sil-org/policy-dgm/"
 fontsize: 11pt
@@ -19,17 +20,23 @@ header-includes:
   - \usepackage[a-3u]{pdfx}
   - \usepackage{lastpage}
   - \usepackage{fancyhdr}
+  - \usepackage{draftwatermark}
+  - \usepackage{xcolor}
   - \usepackage[en-US]{datetime2}
   - \renewcommand{\headrulewidth}{0pt}
   - \renewcommand{\footrulewidth}{0pt}
   - \pagestyle{fancy}
   - \fancyhf{}
+  - \fancyfoot[L]{\jobname.pdf}
   - \fancyfoot[R]{\thepage{} of \pageref{LastPage}}
-  - \fancyfoot[L]{\DTMnow}
   - \linespread{1.05}
   - \setcounter{tocdepth}{2}
   - \setcounter{secnumdepth}{2}
   - \setmainfont{gentiumplus}
+  - \SetWatermarkText{DRAFT} 
+  - \SetWatermarkColor{black!15} 
+  - \SetWatermarkAngle{45}
+  - \SetWatermarkScale{1}
 geometry:
   - top=0.70in
   - bottom=0.75in
@@ -40,5 +47,7 @@ hypersetup:
   - allcolors=blue
   - hidelinks=false
 ---
-**Version:** v0.1.8 **Effective Date:** [TBD] **Last Reviewed:** [TBD]
+**Version:** v0.2.5-2-g120cddf **Effective Date:** [TBD] **Last Reviewed:** [TBD] 
+**[Only PDF format is authoritative.]**
+
 
