@@ -1,7 +1,6 @@
-# Conflict Resolution for Definitional Issues
+# Conflict Resolution
 
-Definitional conflicts, such as disagreements on data terms, classifications, or standards, are resolved through a structured process:
-When conflicts arise regarding data definitions, classifications, or standards, the following escalation process applies:
+Conflicts, such as disagreements on data terms, classifications, processes or standards, are resolved through a structured process.  The following escalation process applies:
 
 **Step 1: Working Group Resolution** The Data Governance Lead convenes a working group consisting of relevant stakeholders to discuss and attempt to resolve the conflict through collaborative dialogue. This group has 10 business days to reach consensus.
 
