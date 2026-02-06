@@ -38,8 +38,8 @@ header-includes:
   - \SetWatermarkAngle{45}
   - \SetWatermarkScale{1}
 geometry:
-  - top=0.70in
-  - bottom=0.75in
+  - top=0.65in
+  - bottom=0.65in
   - left=1in
   - right=1in
 hypersetup:

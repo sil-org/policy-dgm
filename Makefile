@@ -22,6 +22,9 @@ $(FILENAME)-$(COMMIT_DATE).md: $(wildcard ???-*.md)
 $(FILENAME)-$(COMMIT_DATE).tex: $(FILENAME)-$(COMMIT_DATE).md
 	pandoc -s $(FILENAME)-$(COMMIT_DATE).md -t latex -o $(FILENAME)-$(COMMIT_DATE).tex
 
+$(FILENAME)-$(COMMIT_DATE).txt: $(FILENAME)-$(COMMIT_DATE).md
+	pandoc -s $(FILENAME)-$(COMMIT_DATE).md -t plain -o $(FILENAME)-$(COMMIT_DATE).txt
+
 $(FILENAME)-$(COMMIT_DATE).pdf: $(FILENAME)-$(COMMIT_DATE).tex $(FILENAME)-$(COMMIT_DATE).xmpdata
 	SOURCE_DATE_EPOCH=$(COMMIT_EPOCH) latexmk -pdf -lualatex -use-make $<
         
@@ -53,12 +56,15 @@ $(FILENAME)-$(COMMIT_DATE).odt: $(FILENAME)-$(COMMIT_DATE).md
 gdrive:  ## import .docx version to Google Drive
 	gdrive files import $(FILENAME)-$(COMMIT_DATE).docx
 
+spell: $(FILENAME)-$(COMMIT_DATE).txt ## Check spelling of txt version
+	aspell check $(FILENAME)-$(COMMIT_DATE).txt
+
 release:  ## Create version Release on Github
 	gh release create $(VERSION) --generate-notes -p -t $(RELEASE_NAME)  $(FILENAME)-$(COMMIT_DATE).pdf $(FILENAME)-$(COMMIT_DATE).pdf.sha256 $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).odt
 	
 clean:  ## Clean up the LaTeX temp files using latexmk
 	-latexmk -c
 delete:	clean  ## Delete all the files not stored in Git repo
-	-rm $(FILENAME)-$(COMMIT_DATE).md $(FILENAME)-$(COMMIT_DATE).odt $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).tex $(FILENAME)-$(COMMIT_DATE).pdf* pdfa.xmpi *.xmpdata *.tex
+	-rm $(FILENAME)-$(COMMIT_DATE).md $(FILENAME)-$(COMMIT_DATE).odt $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).tex $(FILENAME)-$(COMMIT_DATE).txt $(FILENAME)-$(COMMIT_DATE).pdf* pdfa.xmpi *.xmpdata *.tex
 	git restore 000-headers-toc.md
 
