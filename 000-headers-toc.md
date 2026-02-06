@@ -1,6 +1,6 @@
 ---
 title: SIL Global Data Governance Policy [DRAFT]
-author: " 4 Dec 2025, 08:56:45"
+author: " 6 Feb 2026, 15:43:40"
 subject: "Data Governance Policy"
 keywords: 
   - "SIL Global"
@@ -38,7 +38,7 @@ header-includes:
   - \SetWatermarkAngle{45}
   - \SetWatermarkScale{1}
 geometry:
-  - top=0.70in
+  - top=0.5in
   - bottom=0.75in
   - left=1in
   - right=1in
@@ -47,7 +47,7 @@ hypersetup:
   - allcolors=blue
   - hidelinks=false
 ---
-**Version:** v0.2.5.1 **Effective Date:** [TBD] **Last Reviewed:** [TBD] 
+**Version:** v0.2.6.3 **Effective Date:** [TBD] **Last Reviewed:** [TBD] 
 **[Only PDF format is authoritative.]**
 
 
