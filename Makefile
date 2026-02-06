@@ -59,7 +59,7 @@ gdrive:  ## import .docx version to Google Drive
 spell: $(FILENAME)-$(COMMIT_DATE).txt ## Check spelling of txt version
 	aspell check $(FILENAME)-$(COMMIT_DATE).txt
 
-release:  ## Create version Release on Github
+release:  all ## Create version Release on Github
 	gh release create $(VERSION) --generate-notes -p -t $(RELEASE_NAME)  $(FILENAME)-$(COMMIT_DATE).pdf $(FILENAME)-$(COMMIT_DATE).pdf.sha256 $(FILENAME)-$(COMMIT_DATE).docx $(FILENAME)-$(COMMIT_DATE).odt
 	
 clean:  ## Clean up the LaTeX temp files using latexmk
