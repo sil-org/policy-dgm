@@ -1,5 +1,6 @@
 ---
-title: SIL Global Data Governance Policy [DRAFT]
+title: |
+  ![SIL Logo](SIL_Glyph_Logo_Black-Annapurna_CMYK-trim.png){width=1in} SIL Global Data Governance Policy [DRAFT]
 author: "$TITLE_DATE"
 subject: "Data Governance Policy"
 keywords: 
@@ -15,6 +16,7 @@ papersize: letter
 header-includes:
   - \usepackage{fontspec}
   - \usepackage{geometry}
+  - \usepackage{graphicx}
   - \usepackage{microtype}
   - \usepackage{amsmath}
   - \usepackage[a-3u]{pdfx}
