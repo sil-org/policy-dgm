@@ -34,7 +34,7 @@ header-includes:
   - \linespread{1.05}
   - \setcounter{tocdepth}{2}
   - \setcounter{secnumdepth}{2}
-  - \setmainfont{gentiumplus}
+  - \setmainfont{gentium}
   - \SetWatermarkText{DRAFT} 
   - \SetWatermarkColor{black!15} 
   - \SetWatermarkAngle{45}
